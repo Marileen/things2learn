@@ -1,0 +1,150 @@
+
+/* bootstrap */
+
+@import "bootstrap/normalize.less";
+@import "bootstrap/scaffolding.less";
+@import "bootstrap/mixins.less";
+@import "bootstrap/variables.less";
+@import "bootstrap/grid.less";
+
+//@import "colors.less";
+//@import "mixins.less";
+//@import "modules/startpage-teaser.less";
+
+.main {
+
+  text-align: center;
+
+  select {
+    height:50px;
+    border: 2px solid #ffb04a;
+    background-color: rgba(236,139,13,0.3);
+    border-radius: 4px;
+  }
+
+  button, textarea {
+    width: 100%;
+    margin: 10px auto;
+    display: block;
+    border-radius: 4px;
+    line-height: 50px;
+    border: 2px solid #ffb04a;
+    background-color: rgba(236,139,13,0.3);
+
+    @media (min-width : 992px) {
+      width: 30%;
+    }
+  }
+
+  button, textarea, select {
+
+    &.btn-green {
+      border: 2px solid #66cccc;
+      background-color: rgba(102, 204, 204, 0.3);
+    }
+
+    &.btn-gray {
+      border: 2px solid #babebe;
+      background-color: rgba(186, 190, 190, 0.3);
+    }
+  }
+
+  textarea {
+    background-color: rgba(236,139,13,0.1);
+    line-height: 1.3;
+    height: 150px;
+  }
+
+  .control {
+
+    width: 100%;
+    display: block;
+    margin: auto;
+
+    @media (min-width : 992px) {
+      width: 30%;
+    }
+
+    button.prev {
+      width: 48%;
+      display: inline-block;
+      margin-right:4%;
+    }
+
+    button.next {
+      width: 48%;
+      display: inline-block;
+    }
+
+  }
+
+  p.question {
+    display: block;
+    padding: 35px;
+    background-color: #ffb04a;
+    color: #000000;
+    font-size: 22px;
+    position:relative;
+    @media (min-width : 992px) {
+      width: 50%;
+      margin: 10px auto;
+    }
+
+    .info {
+      color: #333;
+      font-size: 18px;
+      display: block;
+      position: absolute;
+      padding: 0 5px;
+      right:10px;
+      bottom:10px;
+      border: 1px solid #333;
+    }
+  }
+
+  .answer {
+
+    display: none;
+    padding: 35px;
+    border: 2px solid #ffb04a;
+    color: #ffb04a;
+    font-size: 16px;
+    text-align: left;
+    @media (min-width : 992px) {
+      width: 50%;
+      margin: 10px auto;
+    }
+
+    &.show {
+      display: block;
+    }
+  }
+
+  [data-component="add-question"] {
+
+    form span.info {
+      display: none;
+
+      .show {
+        display: block;
+      }
+
+    }
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+
+
+  @keyframes fade {
+    0%   {opacity: 0}
+    100% {opacity: 1}
+  }
+
+
+  .dont-show {
+    display: none;
+  }
+}

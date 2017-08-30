@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "noImplicitAny": false,
+        "removeComments": false,
+        "sourceMap": true,
+        "inlineSources": true,
+        "noEmitOnError": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "jsx": "react"
+    },
+    "exclude": [
+        "www"
+    ],
+    "lib": [
+        "es6",
+        "dom"
+    ]
+}

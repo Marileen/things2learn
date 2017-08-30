@@ -1,0 +1,12 @@
+# IDE and system files
+/.idea
+atlassian-ide-plugin.xml
+/.project
+*BACKUP*
+*.DS_Store
+.settings/*
+.buildpath
+/bower_components
+/node_modules
+/.tmp
+
